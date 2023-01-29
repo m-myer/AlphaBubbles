@@ -1,0 +1,53 @@
+alphab: alphab.o input.o model.o events.o renderer.o raster.o bitmaps.o screen.o psg.o music.o effects.o splash.o video.o super.o ikbd.o vbl.o isr.o
+	cc68x -g alphab.o input.o  model.o events.o renderer.o raster.o bitmaps.o screen.o psg.o music.o effects.o splash.o video.o super.o ikbd.o vbl.o isr.o -o alphab
+
+alphab.o: alphab.c alphab.h 
+	cc68x -g -c alphab.c
+
+input.o: input.c input.h
+	cc68x -g -c input.c
+
+model.o: model.c model.h
+	cc68x -g -c model.c
+
+events.o: events.c events.h
+	cc68x -g -c events.c
+
+renderer.o: renderer.c renderer.h
+	cc68x -g -c renderer.c
+
+raster.o: raster.c raster.h
+	cc68x -g -c raster.c
+
+bitmaps.o: bitmaps.c bitmaps.h
+	cc68x -g -c bitmaps.c
+
+screen.o: screen.c screen.h
+	cc68x -g -c screen.c
+	
+psg.o: psg.c psg.h
+	cc68x -g -c psg.c
+	
+music.o: music.c music.h
+	cc68x -g -c music.c
+
+effects.o: effects.c effects.h
+	cc68x -g -c effects.c
+	
+splash.o: splash.c splash.h
+	cc68x -g -c splash.c
+	
+video.o: video.s video.h
+	gen -L2 video.s
+	
+super.o: super.s
+	gen -L2 super.s
+	
+ikbd.o: ikbd.s ikbd.h
+	gen -L2 ikbd.s
+	
+vbl.o: vbl.s vbl.h
+	gen -L2 vbl.s
+	
+isr.o: isr.c isr.h
+	cc68x -g -c isr.c
