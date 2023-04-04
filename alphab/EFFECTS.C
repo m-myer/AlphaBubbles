@@ -10,10 +10,10 @@
 
 
 /******************************************************************************
- *	Function: playChime                                                       *
+ *	Function: playChime                                                   *
  *                                                                            *
- *	Purpose:                                                                  *
- *	 	 Plays a chiming sound when the progress bar has been filled          *
+ *	Purpose:                                                              *
+ *	 	 Plays a chiming sound when the progress bar has been filled  *
  *                                                                            *
  *****************************************************************************/
 void playChime()
@@ -29,10 +29,10 @@ void playChime()
 
 
 /******************************************************************************
- *	Function: playPop                                                         *
+ *	Function: playPop                                                     *
  *                                                                            *
- *	Purpose:                                                                  *
- *	 	 Plays a popping sound when the player has popped a bubble            *
+ *	Purpose:                                                              *
+ *	 	 Plays a popping sound when the player has popped a bubble    *
  *                                                                            *
  *****************************************************************************/
 void playPop()
@@ -47,10 +47,11 @@ void playPop()
 
 
 /******************************************************************************
- *	Function: playSpawn                                                       *
+ *	Function: playSpawn                                                   *
  *                                                                            *
- *	Purpose:                                                                  *
- *	 	 Plays a unique sound when a bubble has spawned into the play area    *
+ *	Purpose:                                                              *
+ *	 	 Plays a unique sound when a bubble has spawned into the      *
+ *               play area                                                    *
  *                                                                            *
  *****************************************************************************/
 void playSpawn()
